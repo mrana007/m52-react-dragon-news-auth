@@ -9,7 +9,7 @@ const Login = () => {
     const {signIn} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    console.log('logged in page',location);
+    // console.log('logged in page',location);
 
     const handleLogin = e =>{
         e.preventDefault();
@@ -17,7 +17,7 @@ const Login = () => {
         const form = new FormData(e.currentTarget); //
         const email = form.get('email')
         const password = form.get('password')
-        console.log(email, password);
+        // console.log(email, password);
 
         // signIn User
         signIn(email, password)
